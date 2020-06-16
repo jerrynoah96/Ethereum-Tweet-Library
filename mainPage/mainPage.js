@@ -4,6 +4,9 @@ const topProfiles = document.querySelector('.top-profile');
 const defiProfiles = document.querySelector('.Defi-profile');
 const eth2Profiles = document. querySelector('.eth2-profile');
 
+// select loader
+const loader = document.querySelector('loader');
+
 
 // selecting tweet-display div for each section
 
@@ -19,8 +22,12 @@ const closeEth2Tweets = document.querySelector('.eth2-tweets-close');
 
 // add event Listener for profile-clicking to display tweets 
 
+
 topProfiles.addEventListener('click', ()=>{
   topProfilesTweets.style.display = 'flex';
+  
+  
+  
 });
 
 defiProfiles.addEventListener('click', ()=>{
