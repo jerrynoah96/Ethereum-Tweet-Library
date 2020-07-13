@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../300ppi/500ppi/bg.png);
+  background-size: cover;
+}
+.main {
+  position: relative;
+}
+.side__nav {
+  width: 5vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  position: relative;
+}
+
+.side__nav-icons {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 3%;
+}
+.nav-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+  cursor: pointer;
+}
+.app-name {
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ethereum-text {
+  font-size: 1.3rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  margin-right: 60%;
+  font-family: "Nunito";
+}
+.tweet-library-text {
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  margin-left: 50%;
+  font-family: "Nunito";
+}
+.search {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 20%;
+  height: 1.6rem;
+  display: flex;
+}
+.search-input {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 2rem;
+  padding-left: 2.5rem;
+}
+.search-input::placeholder {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+}
+.search-input:focus {
+  border-radius: inherit;
+}
+.search-icon {
+  position: absolute;
+  margin-left: 0.18rem;
+  margin-top: 0.15rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 15%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-search {
+  color: white;
+}
+.content-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main-icon {
+  height: 4rem;
+  width: 3rem;
+  border: thin solid rgba(65, 105, 225, 0.9);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main-icon:hover {
+  background-color: rgba(65, 105, 225, 0.9);
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.row a {
+  text-decoration: none;
+}
+.main-icon__container {
+  text-align: center;
+}
+.main-icon__title {
+  font-size: 1rem;
+  display: block;
+  color: rgba(65, 105, 225, 0.9);
+}
+.nxt-line-txt {
+  display: block;
+}
+
+$primary-color: blue;
+$secondary-color: red;
+
+.sass {
+  p {
+    color: $primary-color;
+  }
+  h1 {
+    color: $secondary-color;
+  }
+}
