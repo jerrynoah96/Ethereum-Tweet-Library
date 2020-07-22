@@ -41,3 +41,40 @@ function hideLoader(){
       
    });
 }); 
+
+// implement search function
+const searchBar = document.querySelector('.search-input'); // html search-input element
+searchBar.addEventListener('keyup', (e)=>{
+  const name = document.querySelectorAll('.name');//paragraph tag that contains both twitterId and profileName
+  const userInput = e.target.value.toLowerCase(); // user input
+  var i;
+  var twitterId; // profile twitter id
+  var profileName;// profile Name
+  
+  for(i=0; i < name.length; i++){
+    twitterId = name[i].getElementsByClassName('twitter-username')[0];
+    profileName = name[i].getElementsByClassName('profile-name')[0];
+
+    /* if no search match
+    if (twitterId.innerHTML.toLowerCase().indexOf(userInput) == 0 && 
+    profileName.innerHTML.toLowerCase().indexOf(userInput) == 0) {
+      const profileGrid = document.querySelector('.profiles-grid'); //profileGrid
+      const noSearch = document.createElement('p');// create a p tag to contain error msg
+      noSearch.className = 'no-search'; // add class name
+      noSearch.appendChild(document.createTextNode('"no search found"')); //create error message
+      
+      profileGrid.appendChild(noSearch);
+      
+    } */
+    //if user input is found in either name of twitterid
+    if(twitterId.innerHTML.toLowerCase().indexOf(userInput) > -1 || 
+      profileName.innerHTML.toLowerCase().indexOf(userInput) > -1){
+      name[i].parentElement.style.display = '';
+     
+    } else{
+      name[i].parentElement.style.display = 'none';
+    }
+      
+
+}
+})
