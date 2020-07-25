@@ -71,6 +71,7 @@ body {
   width: 20%;
   height: 1.6rem;
   display: flex;
+  /* border: 3px solid green; */
 }
 
 .search-input {
@@ -79,6 +80,7 @@ body {
   display: inline-block;
   border-radius: 2rem;
   padding-left: 2.5rem;
+  /* border: 3px solid red; */
 }
 
 .search-input::placeholder {
@@ -94,15 +96,17 @@ body {
 
 .search-icon {
   position: absolute;
-  margin-left: 0.18rem;
+  margin-left: 0.25rem;
   margin-top: 0.15rem;
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
-  width: 15%;
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 10%;
+  /* border-radius: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid blue; */
 }
 
 .fa-search {
@@ -140,7 +144,7 @@ body {
 .row {
   display: flex;
   justify-content: space-evenly;
-  border: 5px solid orange;
+  /* border: 5px solid orange; */
 }
 
 .row a {
@@ -195,7 +199,7 @@ body {
   }
 
   .main {
-    border: 10px solid pink;
+    /* border: 10px solid pink; */
   }
   .side__nav {
     /* border: 3px solid blue; */
@@ -236,6 +240,14 @@ body {
 
   .profiles-grid {
     border: 3px solid green;
+  }
+
+  .twitter-username {
+    border: 1px solid green;
+  }
+
+  p.name {
+    border: 2px solid red;
   }
 }
 /*# sourceMappingURL=styles.css.map */
