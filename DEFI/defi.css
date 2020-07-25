@@ -15,7 +15,7 @@ body {
   position: relative;
   overflow: scroll;
 }
-.search__icon-box {
+/* .search__icon-box {
   position: absolute;
   background-color: rgba(65, 105, 225, 0.9);
   height: 25%;
@@ -30,28 +30,38 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 2.5%;
-}
+} */
 .search-input {
-  width: 70%;
+  /* width: 70%;
   height: 25%;
   display: inline-block;
   border: none;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   padding-left: 2rem;
   box-shadow: 0 0.1rem 1rem black;
+  border: 2px solid pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
 }
-.search-icon {
-  margin-bottom: -1.75rem;
+/* .search-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-bottom: -2.75rem;
+
   margin-right: 8.7rem;
+  margin-left: 1.5rem;
   padding: 0.25rem;
   border-radius: 50%;
   z-index: 2;
   background-color: rgba(65, 105, 225, 0.9);
-}
-.fa-search {
+} */
+/* .fa-search {
   color: white;
   cursor: pointer;
-}
+} */
 .search-input::placeholder {
   font-style: italic;
   color: rgba(0, 0, 0, 0.6);
@@ -72,10 +82,10 @@ body {
 .profile-block {
   position: relative;
   background-color: white;
-  width: 80%;
+  width: 90%;
   height: 2rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   margin-top: 1rem;
   box-shadow: 0 0.15rem 0.4rem black;
   cursor: pointer;
@@ -221,4 +231,77 @@ body {
   box-shadow: inset 0 0 0.1rem grey;
   border-radius: 0.2rem;
   height: 0.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .main-icon_container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 10px solid red;
+  }
+  .main-icon {
+    border: 5px solid blue;
+  }
+
+  .row {
+    border: 3px solid aqua;
+    width: 80vw;
+  }
+  .content-icons {
+    /* margin-right: 30%; */
+    border: 3px dotted pink;
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .main {
+    /* border: 10px solid pink; */
+  }
+  .side__nav {
+    /* border: 3px solid blue; */
+    width: 10vw;
+  }
+
+  .search-input {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    /* border: 3px solid orange; */
+  }
+
+  /* .search-icon {
+    margin-top: 0.2rem;
+    /* border: 2px solid purple; */
+  /* height: 2rem;
+    width: 2rem; */
+  /* border-radius: 50%; */
+  /* } */
+  */ .search-box {
+    display: flex;
+    /* justify-content: space-around; */
+    /* border: 3px solid blue; */
+    width: 70vw;
+  }
+  ::placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border: 1px solid green; */
+  }
+
+  .search__icon-box {
+    border: 1px solid red;
+  }
+
+  .profiles-grid {
+    border: 2px solid green;
+  }
+
+  .twitter-username {
+    border: 1px solid green;
+  }
+
+  p.name {
+    height: 10vh;
+  }
 }
