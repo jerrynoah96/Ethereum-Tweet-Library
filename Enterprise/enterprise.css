@@ -276,21 +276,19 @@ body {
   align-items: center;
   padding-bottom: 2.5%;
 } */
+
 .search-input {
-  /* width: 70%;
-  height: 25%;
-  display: inline-block;
-  border: none;
-  /* border-radius: 2rem; */
-  padding-left: 2rem;
-  box-shadow: 0 0.1rem 1rem black;
-  border: 2px solid pink;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  position: absolute;
+  width: 80%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 100%;
+  padding-bottom: 0.5rem;
 }
+
 /* .search-icon {
   height: 1.5rem;
   width: 1.5rem;
@@ -424,6 +422,9 @@ body {
   transform: scale(1.2);
 }
 
+.search-input {
+}
+
 .main-icon__container {
   display: flex;
   flex-direction: column;
@@ -494,56 +495,53 @@ body {
   }
   .content-icons {
     /* margin-right: 30%; */
-    border: 3px dotted pink;
+    /* border: 3px dotted pink; */
     width: 70vw;
     height: 50vh;
   }
 
-  .main {
-    /* border: 10px solid pink; */
+  /* .main {
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+  } */
+  .other-icons {
+    width: 20%;
+    /* height: 15%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: auto; */
+
+    /* border: 3px solid pink; */
+    /* justify-content: flex-end;
+    justify-self: self-end;
+    align-content: flex-end; */
   }
+
   .side__nav {
     /* border: 3px solid blue; */
     width: 10vw;
   }
 
   .search-input {
-    display: flex;
-    height: 2rem;
-    justify-content: center;
+    width: 60%;
     /* border: 3px solid orange; */
   }
 
-  /* .search-icon {
-    margin-top: 0.2rem;
-    /* border: 2px solid purple; */
-  /* height: 2rem;
-    width: 2rem; */
-  /* border-radius: 50%; */
-  /* } */
-  */ .search-box {
-    display: flex;
-    /* justify-content: space-around; */
-    /* border: 3px solid blue; */
-    width: 70vw;
-  }
-  ::placeholder {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* border: 1px solid green; */
-  }
-
   .search__icon-box {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .profiles-grid {
-    border: 2px solid green;
+    /* border: 2px solid blue; */
+    height: 100vh;
   }
 
   .twitter-username {
-    border: 1px solid green;
+    width: 100vw;
+    /* border: 1px solid green; */
   }
 
   p.name {

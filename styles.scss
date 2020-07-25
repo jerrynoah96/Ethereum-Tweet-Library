@@ -148,3 +148,11 @@ $secondary-color: red;
     color: $secondary-color;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content-icons {
+    width: 70vw;
+    height: 50vh;
+    // border: 3px solid green;
+  }
+}

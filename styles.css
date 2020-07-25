@@ -188,22 +188,21 @@ body {
   }
 
   .row {
-    border: 3px solid aqua;
-    width: 80vw;
+    /* border: 3px solid aqua; */
+    width: 70vw;
   }
   .content-icons {
-    /* margin-right: 30%; */
-    border: 3px dotted pink;
     width: 70vw;
     height: 50vh;
   }
 
-  .main {
-    /* border: 10px solid pink; */
-  }
   .side__nav {
     /* border: 3px solid blue; */
-    width: 10vw;
+    width: 0vw;
+  }
+
+  .side__nav-icons {
+    display: none;
   }
 
   .search-input {
@@ -211,6 +210,10 @@ body {
     height: 2rem;
     justify-content: center;
     /* border: 3px solid orange; */
+  }
+
+  .row1 {
+    display: 3px solid green;
   }
 
   .search-icon {
