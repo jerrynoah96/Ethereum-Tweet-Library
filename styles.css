@@ -71,6 +71,7 @@ body {
   width: 20%;
   height: 1.6rem;
   display: flex;
+  /* border: 3px solid green; */
 }
 
 .search-input {
@@ -79,9 +80,12 @@ body {
   display: inline-block;
   border-radius: 2rem;
   padding-left: 2.5rem;
+  /* border: 3px solid red; */
 }
 
 .search-input::placeholder {
+  display: flex;
+  justify-content: space-around;
   font-style: italic;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -92,15 +96,17 @@ body {
 
 .search-icon {
   position: absolute;
-  margin-left: 0.18rem;
+  margin-left: 0.25rem;
   margin-top: 0.15rem;
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
-  width: 15%;
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 10%;
+  /* border-radius: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid blue; */
 }
 
 .fa-search {
@@ -128,6 +134,7 @@ body {
   border-radius: 50%;
   padding: 1rem;
   cursor: pointer;
+  /* border: 5px dotted orange; */
 }
 
 .main-icon:hover {
@@ -137,6 +144,7 @@ body {
 .row {
   display: flex;
   justify-content: space-evenly;
+  /* border: 5px solid orange; */
 }
 
 .row a {
@@ -145,6 +153,7 @@ body {
 
 .main-icon__container {
   text-align: center;
+  /* border: 1px solid green; */
 }
 
 .main-icon__title {
@@ -157,6 +166,10 @@ body {
   display: block;
 }
 
+.other-icons {
+  border: 2px solid blue;
+}
+
 .sass p {
   color: blue;
 }
@@ -164,4 +177,80 @@ body {
   color: red;
 }
 
+@media screen and (max-width: 500px) {
+  .main-icon_container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 10px solid red;
+  }
+  .main-icon {
+    border: 5px solid blue;
+  }
+
+  .row {
+    /* border: 3px solid aqua; */
+    width: 70vw;
+  }
+  .content-icons {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .side__nav {
+    /* border: 3px solid blue; */
+    width: 0vw;
+  }
+
+  .side__nav-icons {
+    display: none;
+  }
+
+  .search-input {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    /* border: 3px solid orange; */
+  }
+
+  .row1 {
+    display: 3px solid green;
+  }
+
+  .search-icon {
+    margin-top: 0.2rem;
+    /* border: 2px solid purple; */
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+
+  .search-box {
+    display: flex;
+    /* justify-content: space-around; */
+    /* border: 3px solid blue; */
+    width: 70vw;
+  }
+  ::placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border: 1px solid green; */
+  }
+
+  .search__icon-box {
+    border: 1px solid red;
+  }
+
+  .profiles-grid {
+    border: 3px solid green;
+  }
+
+  .twitter-username {
+    border: 1px solid green;
+  }
+
+  p.name {
+    border: 2px solid red;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
