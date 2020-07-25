@@ -231,72 +231,72 @@ body {
   height: 0.3rem;
 }
 
-@media screen and (max-width: 500px) {
-  .main-icon_container {
-    display: flex;
-    justify-content: space-evenly;
-    border: 10px solid red;
-  }
-  .main-icon {
-    border: 5px solid blue;
-  }
-
-  .row {
-    border: 3px solid aqua;
-    width: 80vw;
-  }
-  .content-icons {
-    /* margin-right: 30%; */
-    /* border: 3px dotted pink; */
-    width: 70vw;
-    height: 50vh;
-  }
-
-  /* .main {
-    border: 5px solid red;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-  } */
-  .other-icons {
-    width: 20%;
-    /* height: 15%;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    margin: auto; */
-
-    /* border: 3px solid pink; */
-    /* justify-content: flex-end;
-    justify-self: self-end;
-    align-content: flex-end; */
-  }
-
-  .side__nav {
-    /* border: 3px solid blue; */
-    width: 10vw;
-  }
-
-  .search-input {
-    width: 60%;
-    /* border: 3px solid orange; */
-  }
-
-  .search__icon-box {
-    /* border: 1px solid red; */
-  }
-
-  .profiles-grid {
-    /* border: 2px solid blue; */
+@media screen and (max-width: 700px) {
+  .main {
+    /* border: 1px solid blue; */
     height: 100vh;
+    width: 100vw;
+  }
+
+  .tweets__section {
+    /* border:1px solid red; */
+    width: 100vw;
+  }
+
+  .other-icons {
+    /* border: 2px solid orange; */
+    background-color: #333;
+    overflow: scroll;
+    position: fixed;
+    bottom: 0;
+    height: 15.5vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  .profiles-section {
+    /* background-color: lightgrey; */
+
+    /* border:1px solid green; */
+    width: 45vw;
+  }
+
+  .tweets-default {
+    border: 2px solid px;
+  }
+
+  .profile-block {
+    /* border: 1px solid red; */
+    display: flex;
+  }
+
+  .name {
+    display: flex;
+    margin-top: 0em;
+    /* border: 1px solid purple; */
+    margin-bottom: 50%;
   }
 
   .twitter-username {
-    width: 100vw;
-    /* border: 1px solid green; */
+    display: none;
   }
 
-  p.name {
-    height: 10vh;
+  .profiles-grid {
+    /* border:2px solid green; */
+    margin-bottom: 10rem;
+    width: 100%;
+    top: 12%;
+    /* height:80vh; */
+  }
+
+  .tweets-display {
+    /* border:2px solid red; */
+    width: 100%;
+  }
+
+  .search-input {
+    /* border:2px solid red; */
+    width: 100%;
+    margin-left: 0;
   }
 }

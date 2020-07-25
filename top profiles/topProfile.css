@@ -474,18 +474,16 @@ body {
   height: 0.3rem;
 }
 
-@media screen and (max-width: 500px) {
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
+  .main {
+    /* border: 1px solid blue; */
+    height: 100vh;
+    width: 100vw;
+  }
 
-    .main {
-      border:1px solid blue;
-      height:100vh;
-      width:100vw;
-    }
-
-  .tweets__section{
+  .tweets__section {
     /* border:1px solid red; */
-    width:100vw;
+    width: 100vw;
   }
 
   .other-icons {
@@ -494,45 +492,54 @@ body {
     overflow: scroll;
     position: fixed;
     bottom: 0;
-    height:15.5vh;
+    height: 15.5vh;
     width: 100vw;
     display: flex;
   }
 
-  .profiles-section{
-        background-color: lightgrey;
+  .profiles-section {
+    /* background-color: lightgrey; */
 
     /* border:1px solid green; */
     width: 45vw;
   }
 
-  .tweets-default{
-    border:2px solid px;
+  .tweets-default {
+    border: 2px solid px;
   }
 
-  .profile-name{
-    height:100%;
-    /* width:100%; */
-    /* /* display:flex; */
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 3 rem;
-    /* border:2px solid green; */
+  .profile-block {
+    /* border: 1px solid red; */
+    display: flex;
+  }
+
+  .name {
+    display: flex;
+    margin-top: 0em;
+    /* border: 1px solid purple; */
+    margin-bottom: 50%;
   }
 
   .twitter-username {
-    display:none;
+    display: none;
   }
 
-  .profiles-grid{
+  .profiles-grid {
     /* border:2px solid green; */
     margin-bottom: 10rem;
-    top:12%;
+    width: 100%;
+    top: 12%;
     /* height:80vh; */
   }
 
   .tweets-display {
     /* border:2px solid red; */
-    width:100%;
+    width: 100%;
   }
+
+  .search-input {
+    /* border:2px solid red; */
+    width: 100%;
+    margin-left: 0;
   }
+}
