@@ -1,8 +1,14 @@
-// add eventListener to set tweet display for each profile upon click on profile block
-//for Token brice
+const profilesGrid = document.querySelector('.profiles-grid');
 const profileBlock = document.querySelectorAll('.profile-block');
 const displayDefault = document.querySelector('.tweets-default');
 const loader = document.querySelector('.loader-box');
+const name = document.querySelectorAll('.name');//paragraph tag that contains both twitterId and profileName
+const searchBar = document.querySelector('.search-input'); // html search-input element
+var i;
+var twitterId; // profile twitter id
+var profileName;// profile Name
+
+
 
 
 
@@ -43,17 +49,15 @@ function hideLoader(){
 }); 
 
 // implement search function
-const searchBar = document.querySelector('.search-input'); // html search-input element
+
 searchBar.addEventListener('keyup', (e)=>{
-  const name = document.querySelectorAll('.name');//paragraph tag that contains both twitterId and profileName
   const userInput = e.target.value.toLowerCase(); // user input
-  var i;
-  var twitterId; // profile twitter id
-  var profileName;// profile Name
   
   for(i=0; i < name.length; i++){
     twitterId = name[i].getElementsByClassName('twitter-username')[0];
     profileName = name[i].getElementsByClassName('profile-name')[0];
+
+    
 
     /* if no search match
     if (twitterId.innerHTML.toLowerCase().indexOf(userInput) == 0 && 
@@ -77,4 +81,23 @@ searchBar.addEventListener('keyup', (e)=>{
       
 
 }
+})
+// logic for notification modal
+const noteModal = document.querySelector('.notification-modal-popUp');
+// function that displays notification modal 
+function displayNoteModal(){
+  noteModal.style.display = 'flex'; // set modal to display
+
+}
+
+// call function displayNoteModal on page load
+window.onload = function(){
+  setTimeout(displayNoteModal, 5000);
+  
+}
+
+// add event listener to close notification modal
+document.querySelector('.close-notification').addEventListener('click',(e)=>{
+  noteModal.style.display = 'none';
+
 })

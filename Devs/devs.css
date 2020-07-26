@@ -1,27 +1,30 @@
-/* body {
+/* body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-image: url(../300ppi/500ppi/bg.png);
   background-size: cover;
+  
 }
-.main {
+.main{
   display: flex;
+  
 }
-.profiles-section {
+.profiles-section{
   width: 25vw;
   height: 100vh;
-  background-color: rgba(225, 225, 225, 0.3);
+  background-color: rgba(225,225,225, 0.3);
   position: relative;
   overflow: scroll;
+  
 }
-.search__icon-box {
+.search__icon-box{
   position: absolute;
-  background-color: rgba(65, 105, 225, 0.9);
+  background-color: rgba(65,105,225, 0.9);
   height: 25%;
   width: 80%;
   top: -5%;
-  border: thin solid rgba(65, 105, 225, 0.9);
+  border: thin solid rgba(65,105,225, 0.9);
   border-radius: 1rem;
   left: 50%;
   transform: translate(-50%);
@@ -31,7 +34,7 @@
   align-items: center;
   padding-bottom: 2.5%;
 }
-.search-input {
+.search-input{
   width: 70%;
   height: 25%;
   display: inline-block;
@@ -40,27 +43,27 @@
   padding-left: 2rem;
   box-shadow: 0 0.1rem 1rem black;
 }
-/* .search-icon {
+.search-icon {
   margin-bottom: -1.75rem;
   margin-right: 8.7rem;
   padding: 0.25rem;
   border-radius: 50%;
   z-index: 2;
-  background-color: rgba(65, 105, 225, 0.9);
+  background-color: rgba(65,105,225, 0.9);
 }
-.fa-search {
+.fa-search{
   color: white;
   cursor: pointer;
-} */
-/* .search-input::placeholder {
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.6);
 }
-.search-input:focus {
+.search-input::placeholder{
+  font-style: italic;
+  color: rgba(0,0,0, 0.6);
+}
+.search-input:focus{
   border-radius: inherit;
 }
-.profiles-grid {
-  position: absolute;
+.profiles-grid{
+  position:absolute;
   width: 100%;
   height: auto;
   top: 30%;
@@ -68,49 +71,55 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 0.5rem;
+  
+  
 }
-.profile-block {
+.profile-block{
   position: relative;
   background-color: white;
   width: 80%;
   height: 2rem;
   border: none;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 1rem; 
   box-shadow: 0 0.15rem 0.4rem black;
   cursor: pointer;
 }
-.name {
+.name{
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0; 
   font-size: 0.8rem;
   display: flex;
   justify-content: space-evenly;
+  
 }
-.profile-name {
+.profile-name{
   font-weight: bold;
 }
-.tweets__section {
+.tweets__section{
   width: 70vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section__header {
+.section__header{
   text-align: center;
+  
+   
 }
 
-.tweets-display {
+
+.tweets-display{
   text-align: center;
   height: 80vh;
   width: 50vw;
   overflow: scroll;
   position: relative;
 }
-.tweets-default {
+.tweets-default{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -119,9 +128,10 @@
   align-items: center;
   font-family: cursive;
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0,0,0, 0.5);
+  
 }
-.loader-box {
+.loader-box{
   position: absolute;
   width: auto;
   height: auto;
@@ -129,57 +139,63 @@
   top: 50%;
   z-index: 9999;
   display: none;
+    
+  
 }
 
-.section__header-icon {
+.section__header-icon{
   height: 2rem;
   width: 1.5rem;
-  border: thin solid rgba(65, 105, 225, 0.9);
+  border: thin solid rgba(65,105,225, 0.9);
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   margin-top: 1rem;
 }
-.section-title {
-  color: rgba(65, 105, 225, 0.9);
+.section-title{
+  color:  rgba(65,105,225, 0.9);
   font-size: 0.7rem;
   display: block;
 }
-.profile__tweets-display {
+.profile__tweets-display{
   height: 100%;
   width: 100%;
 }
-.other-icons {
+.other-icons{
   height: 100vh;
   width: auto;
   overflow: scroll;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0, 0.6);
 }
-.main-icon {
+.main-icon{
   height: 3rem;
   width: 2rem;
-  border: thin solid rgba(65, 105, 225, 0.9);
+  border: thin solid rgba(65,105,225, 0.9);
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
   margin-top: 1rem;
 }
-.main-icon:hover {
-  background-color: rgba(65, 105, 225, 0.9);
+.main-icon:hover{
+  background-color: rgba(65,105,225, 0.9);
   transform: scale(1.2);
 }
 
-.main-icon__container {
+.main-icon__container{
   text-align: center;
 }
-.main-icon__title {
+.main-icon__title{
   font-size: 0.7rem;
   display: block;
   color: white;
+  
+
 }
-.nxt-line-txt {
+.nxt-line-txt{
   display: block;
 }
+
+
 
 .profiles-section::-webkit-scrollbar {
   width: 0.3rem;
@@ -187,11 +203,13 @@
 }
 .profiles-section::-webkit-scrollbar-thumb {
   background: rgba(30, 144, 255);
+ 
 }
 .profiles-section::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.1rem grey;
+	box-shadow: inset 0 0 0.1rem grey;
   border-radius: 0.2rem;
   height: 0.3rem;
+  
 }
 
 .other-icons::-webkit-scrollbar {
@@ -200,12 +218,15 @@
 }
 .other-icons::-webkit-scrollbar-thumb {
   background: rgba(30, 144, 255);
+ 
 }
 .other-icons::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.1rem grey;
+	box-shadow: inset 0 0 0.1rem grey;
   border-radius: 0.2rem;
   height: 0.3rem;
+  
 }
+
 
 .tweets-display::-webkit-scrollbar {
   width: 0.3rem;
@@ -213,13 +234,16 @@
 }
 .tweets-display::-webkit-scrollbar-thumb {
   background: rgba(30, 144, 255);
+ 
 }
 .tweets-display::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.1rem grey;
+	box-shadow: inset 0 0 0.1rem grey;
   border-radius: 0.2rem;
   height: 0.3rem;
+  
 } */
-*/ body {
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -321,6 +345,78 @@
 .profile-name {
   font-weight: bold;
 }
+/* notification modal popup */
+.notification-modal-popUp{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(33, 48, 94, 0.4);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: notificationShow;
+  animation-duration: .01s;
+  transition: .2s all;
+  display: none;
+}
+
+.notification-modal-white{
+  position: relative;
+  height: 70vh;
+  width: 50vw;
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0,0,0);
+
+}
+.notification-white-bg{
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: -99;
+
+}
+.close-notification{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: rgba(225,225,225);
+  font-size: 1.8rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+}
+.notification-content{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dont-show-notify{
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  transform: translate(50%, -5%);
+  font-size: 1rem;
+
+}
+/*notification popup animation*/
+@keyframes notificationShow{
+ 
+  100%{
+    opacity: 1;
+
+  }
+}
+/* end of notification modal popup*/
 .tweets__section {
   width: 70vw;
   height: 100vh;
@@ -397,6 +493,8 @@
   background-color: rgba(65, 105, 225, 0.9);
   transform: scale(1.2);
 }
+
+
 
 .main-icon__container {
   display: flex;
