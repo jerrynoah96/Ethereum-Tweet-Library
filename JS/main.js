@@ -92,7 +92,7 @@ function displayNoteModal(){
 
 // call function displayNoteModal on page load
 window.onload = function(){
-  setTimeout(displayNoteModal, 5000);
+  setTimeout(displayNoteModal, 3500);
   
 }
 
