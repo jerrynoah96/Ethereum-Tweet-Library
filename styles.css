@@ -182,14 +182,18 @@ body {
     display: flex;
     justify-content: space-evenly;
     border: 10px solid red;
+    
   }
   .main-icon {
     border: 5px solid blue;
+    height: 2.5rem;
+    width: 1.5rem;
   }
 
   .row {
     /* border: 3px solid aqua; */
     width: 70vw;
+    margin-bottom: 10%;
   }
   .content-icons {
     width: 70vw;

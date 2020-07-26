@@ -43,6 +43,8 @@ function hideLoader(){
       hideCurrentTweet();
       //show current tweet of profile clicked on
       showUserTweet(targetId);
+      //close profile list
+      document.querySelector('.profiles-section').classList.remove('profiles-show');
 
       
    });
@@ -100,4 +102,8 @@ window.onload = function(){
 document.querySelector('.close-notification').addEventListener('click',(e)=>{
   noteModal.style.display = 'none';
 
+})
+//toggle profile list on mobile view
+document.querySelector('.hamburger').addEventListener('click', ()=>{
+  document.querySelector('.profiles-section').classList.toggle('profiles-show');
 })
