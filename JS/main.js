@@ -107,3 +107,9 @@ document.querySelector('.close-notification').addEventListener('click',(e)=>{
 document.querySelector('.hamburger').addEventListener('click', ()=>{
   document.querySelector('.profiles-section').classList.toggle('profiles-show');
 })
+
+//toogle other icons in mobile view
+document.getElementById('footer-nav-hamburger').addEventListener('click', ()=>{
+  document.querySelector('.other-icons').classList.toggle('footer-nav-hamburger-inactive');
+
+})

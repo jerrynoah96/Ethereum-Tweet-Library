@@ -561,7 +561,7 @@ body {
   .other-icons {
     /* border: 2px solid orange; */
     background-color: #333;
-    overflow: scroll;
+    overflow: visible;
     position: fixed;
     bottom: 0;
     height: auto;
@@ -569,6 +569,8 @@ body {
     padding: 0 0.2rem;
     display: flex;
     justify-content: space-between;
+    transition: all 0.2s linear;
+    
     
   }
   .main-icon {
@@ -684,6 +686,16 @@ body {
     
   
   }
-  
+  #footer-nav-hamburger{
+    position: absolute;
+    top: -75%;
+    right: 5%;
+    transform: rotate(90deg);
+
+  }
+  .footer-nav-hamburger-inactive{
+    bottom: -17%;
+
+  }
    
 }

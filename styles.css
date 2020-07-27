@@ -23,7 +23,9 @@ body {
   border-radius: 0.2rem;
   height: 0.3rem;
 }
-
+.mobile-header{
+  display: none;
+}
 .side__nav {
   width: 5vw;
   height: 100vh;
@@ -362,8 +364,27 @@ body {
   .close-alert{
     top: -10%;
   }
+  .mobile-header{
+    position: absolute;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-title{
+    font-size: 1.3rem;
+    font-family: "Nunito";
+    color: white;
+    
 
-/*.side__nav {
+
+  }
+
+/* .side__nav {
     width: 100vw;
     height: 10vh;
     background-color: rgba(0, 0, 0, 0.9);
