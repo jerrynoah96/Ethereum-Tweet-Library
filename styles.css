@@ -4,10 +4,24 @@ body {
   box-sizing: border-box;
   background-image: url(../300ppi/500ppi/bg.png);
   background-size: cover;
+  
 }
 
 .main {
   position: relative;
+  overflow: scroll;
+}
+.main::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0;
+}
+.main::-webkit-scrollbar-thumb {
+  background: rgba(30, 144, 255);
+}
+.main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.1rem grey;
+  border-radius: 0.2rem;
+  height: 0.3rem;
 }
 
 .side__nav {
@@ -174,6 +188,86 @@ body {
 .other-icons {
   border: 2px solid blue;
 }
+.profile__suggest{
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
+  height: auto;
+  width: auto;
+  
+}
+.profile__suggest-alert{
+  height: 15vh;
+  width:  10vw;
+  margin-bottom: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 60%, 80% 100%, 70% 60%, 0 60%);
+  border: rgba(65, 105, 225, 0.9);
+  background-color: rgba(65, 105, 225, 0.9);
+  text-align: center;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  animation-name: messageAlert;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.suggest-profile{
+  position: absolute;
+  top: 5%; 
+
+}
+.message__icon {
+  
+  position: fixed;
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  background-color: rgba(65, 105, 225, 0.9);
+  font-size: 120%;
+  padding: 0.5rem;
+  border-radius: 50%; 
+  box-shadow: 0 0.25rem 0.25rem black;
+  cursor: pointer;
+}
+.fa-envelope{
+  color: white;
+}
+.close-alert{
+  position: absolute;
+  top: -17%;
+  right: 5%;
+  color: white;
+  transform: rotate(45deg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* profile suggest alert */
+@keyframes messageAlert {
+  0%{
+    opacity: 0;
+
+  }
+  30%{
+    opacity: 0.6;
+
+  }
+  60%{
+    opacity: 0.3;
+  }
+  80%{
+    opacity: 0.8;
+
+  }
+  100%{
+    opacity:1;
+
+  }
+  
+}
 
 .sass p {
   color: blue;
@@ -183,6 +277,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  
   .main-icon_container {
     display: flex;
     justify-content: space-evenly;
@@ -191,14 +286,14 @@ body {
   }
   .main-icon {
     border: 5px solid blue;
-    height: 2.5rem;
-    width: 1.5rem;
+    height: 2.3rem;
+    width: 1.3rem;
   }
 
   .row {
     /* border: 3px solid aqua; */
     width: 70vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .content-icons {
     width: 70vw;
@@ -258,6 +353,14 @@ body {
   }
   .side__nav{
     width: 0vw;
+  }
+  .profile__suggest-alert{
+    width: 25vw;
+    height: 22.5vh;
+    
+  }
+  .close-alert{
+    top: -10%;
   }
 
 /*.side__nav {
