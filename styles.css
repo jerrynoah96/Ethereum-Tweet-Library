@@ -44,6 +44,8 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  
+  
 }
 
 .ethereum-text {
@@ -51,8 +53,10 @@ body {
   writing-mode: vertical-lr;
   text-orientation: sideways;
   transform: rotate(180deg);
-  margin-right: 60%;
+  margin-right: -60%;
   font-family: "Nunito";
+  
+  
 }
 
 .tweet-library-text {
@@ -60,8 +64,9 @@ body {
   writing-mode: vertical-lr;
   text-orientation: sideways;
   transform: rotate(180deg);
-  margin-left: 50%;
+  margin-left: 60%;
   font-family: "Nunito";
+  
 }
 
 .search {
@@ -200,11 +205,6 @@ body {
     height: 50vh;
   }
 
-  .side__nav {
-    /* border: 3px solid blue; */
-    width: 0vw;
-  }
-
   .side__nav-icons {
     display: none;
   }
@@ -256,5 +256,17 @@ body {
   p.name {
     border: 2px solid red;
   }
+  .side__nav{
+    width: 0vw;
+  }
+
+/*.side__nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    position: relative;
+    top: 0;
+  } */
 }
 /*# sourceMappingURL=styles.css.map */
