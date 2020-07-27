@@ -343,6 +343,15 @@ body {
 .profile-name {
   font-weight: bold;
 }
+.profile-block:hover{
+  background-color: rgba(65, 105, 225, 0.9);
+  color: white;
+}
+.profile-block-active{
+  background-color: rgba(65, 105, 225, 0.9);
+  color: white;
+
+}
 /* notification modal popup */
 .notification-modal-popUp{
   position: absolute;
@@ -492,6 +501,7 @@ body {
   transform: scale(1.2);
 }
 
+
 .main-icon__container {
   display: flex;
   flex-direction: column;
@@ -565,7 +575,7 @@ body {
     position: fixed;
     bottom: 0;
     height: auto;
-    width: 100vw;
+    width: 105vw;
     padding: 0 0.2rem;
     display: flex;
     justify-content: space-between;
@@ -689,7 +699,7 @@ body {
   #footer-nav-hamburger{
     position: absolute;
     top: -75%;
-    right: 5%;
+    right: 10%;
     transform: rotate(90deg);
 
   }

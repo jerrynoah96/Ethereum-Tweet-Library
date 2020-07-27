@@ -113,3 +113,11 @@ document.getElementById('footer-nav-hamburger').addEventListener('click', ()=>{
   document.querySelector('.other-icons').classList.toggle('footer-nav-hamburger-inactive');
 
 })
+
+// add active class to profile block
+profileBlock.forEach(profile => {
+  profile.addEventListener('click', function() {
+    profileBlock.forEach(profile => profile.classList.remove('profile-block-active'));
+    this.classList.add('profile-block-active');
+  })
+})
